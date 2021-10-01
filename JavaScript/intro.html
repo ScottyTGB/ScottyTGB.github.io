@@ -1,15 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS Intro</title>
     <script>
-        document.write("<h1>Hello JavaScript</h1>")
+      document.write("<h1>Hello JavaScript</h1>");
+      // Sequence => line by line
+
+      var i = 5 + 6;
+      var j = i + 23;
+      document.write("<h1>" + j + "</h1>");
+
+      // Variable
+      var a = 1 - 2;
+      document.write(typeof a);
+      document.write("<br>");
+      document.write(a);
+      document.write("<br>");
+
+      var a = 3;
+      document.write(typeof a);
+      document.write("<br>");
+      document.write(a);
+      document.write("<br>");
+
+      var b = 0.12;
+      document.write(typeof b);
+      document.write("<br>");
+
+      var name = "Scotty";
+      document.write(typeof name);
+      document.write("<br>");
+
+      var c = false;
+      document.write(typeof c);
+
+      // Operators
+      // +, -, *, /, % (Arithmetic operators)
+      var sum = 3 + 4;
+      var sub = 13 - 4;
+      var mul = 3 * 4;
+      var div = 32 / 4;
+      var mod = 31 % 4;
+      document.write("<h1> This is a SUM " + sum + "</h1>");
+      document.write("<h1> This is a SUB " + sub + "</h1>");
+      document.write("<h1> This is a MUL " + mul + "</h1>");
+      document.write("<h1> This is a DIV " + div + "</h1>");
+      document.write("<h1> This is a MOD " + mod + "</h1>");
+
+      // =, +=, -=, ++, -- (Assignment operators)
+      var b = 69;
+      b += 1;
+      document.write("<h1>" + b + "</h1>");
+
+      var d = 14;
+      var e = d;
+      document.write("<h1>" + e + "</h1>");
+      ++e;
+      document.write("<h1>" + e + "</h1>");
+      --e;
+      document.write("<h1>" + e + "</h1>");
+      var f = d++;
+      var g = ++d;
+      document.write("<h1> F is " + f + "</h1>");
+      var ff = d;
+      document.write("<h1> FF is " + ff + "</h1>");
+      var g = ++d;
+      document.write("<h1> G is " + g + "</h1>");
+
+      // <, >, <=, >=, ==, != (Comparison operators)
+
+      var x = 18;
+      var y = 15;
+
+      if (x < y) {
+        document.write("<h1> Y is greater than X</h1>");
+      } else if (x > y) {
+        document.write("<h1> Y is less than X</h1>");
+      } else {
+        document.write("<h1> X is equal to Y</h1>");
+      }
     </script>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body></body>
 </html>
