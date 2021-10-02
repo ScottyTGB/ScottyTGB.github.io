@@ -12,7 +12,7 @@ h1 {
 h3 {
   font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode",
     "Lucida Sans", Tahoma, sans-serif;
-  font-size: 14px;
+  font-size: 20px;
   font-style: normal;
   font-variant: normal;
   font-weight: 700;
@@ -171,4 +171,11 @@ table {
 .lower-body {
   padding-left: 10%;
   padding-right: 10%;
+}
+.mikey {
+  color: #212531;
+}
+td > a {
+  color: white;
+  text-decoration: none;
 }
