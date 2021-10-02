@@ -182,5 +182,5 @@ td > a {
 td > a:hover {
   color: #24c175;
   text-decoration: none;
-  transition: 300ms ease;
+  transition: 100ms ease;
 }
