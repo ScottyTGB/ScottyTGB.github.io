@@ -49,12 +49,96 @@
       console.log(x);
       x = 200;
       console.log(x);
-      function show() {
-        var number1 = 2;
-        let number2 = 3;
+
+      let y = 12;
+      if (y == 12) {
+        var num1 = 12;
+        let num2 = 12;
       }
-      show();
-      console.log(number1 + 13);
+      console.log(num1 + 3);
+      // console.log(num2 + 3);
+
+      let mynameis = "Scotty";
+      console.log(mynameis);
+      console.log(mynameis.length);
+      console.log("My name is " + mynameis);
+      console.log(mynameis.toUpperCase());
+      console.log(mynameis.toLowerCase());
+      console.log(mynameis[0]);
+      console.log(mynameis.substring(0, 5));
+      let hi = " Hello kekek ";
+      console.log(hi.trim());
+
+      //Search
+      let ser = "JavaScript is easy";
+      let res = ser.search("easy");
+      console.log(res);
+
+      //Replace
+      let rep = "I live in Yangon";
+      console.log(rep);
+      let go = rep.replace("Yangon", "Mandalay");
+      console.log(go);
+
+      //Backtick sign
+      let bats = `Hello this is
+                JS ;s`;
+      console.log(bats);
+      let firstname = "Scotty";
+      console.log(`First Name is ${firstname}`);
+      console.log(`The addition result is ${1 + 2 + 3}`);
+      console.log("My name is Scotty.\nI live in Wakanda.");
+      console.log("\tHello JS ;s");
+      console.log("I'm a noob ;s");
+
+      //Operators
+      let three = 1 + 2; //addition
+      let four = three + 1;
+      console.log(three);
+      console.log(four);
+
+      let threeOne = "three" + 1;
+      console.log(threeOne);
+
+      let first_name = "Scotty ";
+      let last_name = "Maw";
+      let fullname = first_name + last_name;
+      console.log(fullname);
+      console.log((first_name += "Maw"));
+
+      let two = 4 - 2; //Subtraction
+      console.log(two);
+
+      let result = 20 / 5; //Division
+      let result1 = 20 / 7;
+      let result2 = 1 / 0;
+      console.log(result);
+      console.log(result1);
+      console.log(result2);
+
+      let result3 = 20 % 5; //Modulus
+      let result4 = 20 % 7;
+      let result5 = 1 % 0;
+      console.log(result3);
+      console.log(result4);
+      console.log(result5);
+
+      let mul = 1 * 2;
+      let mul1 = -1 * 2;
+      console.log(mul);
+      console.log(mul1);
+
+      let mul2 = 2 ** 2;
+      let mul3 = 2 ** 8;
+      console.log(mul2);
+      console.log(mul3);
+
+      // Precedence
+      // * / %
+      // + -
+      // =
+      let total = 1 * 2 + ((5 / 2) % 2); //2 + 2.5 % 2 -> 2 + 0.5 -> 2.5
+      console.log(total);
     </script>
   </body>
 </html>
