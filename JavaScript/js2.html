@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS 2</title>
+  </head>
+  <body>
+    <script>
+      //Arrays
+      let arr = [1, 2, 3];
+      let arr1 = Array.of("a", "b", "c");
+      console.log(arr);
+      console.log(arr1);
+      console.log(arr[2]);
+      console.log(arr1[1]);
+
+      let arr2 = [24, "Scotty", ["JavaScript", "React JS"]];
+
+      //Multi-dimentional Arrays
+      let multi = [
+        [1, 2, 3, 4],
+        [4, 5, 6, 7],
+        [7, 8, 9, 10],
+      ];
+      console.log(multi);
+      console.log(multi[0]);
+      console.log(multi[1][2]);
+
+      let fruits = [];
+      fruits[0] = "Apple";
+      fruits[1] = "Orange";
+      fruits[2] = "Mango";
+      console.log(fruits);
+      console.log(fruits.length);
+
+      fruits.push("Banana"); //Add from far right
+      console.log(fruits);
+
+      fruits.unshift("Cherry"); //Add from far left
+      console.log(fruits);
+
+      fruits.pop(); //Remove from far right
+      console.log(fruits);
+
+      fruits.shift(); //Remove from far left
+      console.log(fruits);
+
+      fruits.sort();
+      console.log(fruits);
+
+      fruits.reverse();
+      console.log(fruits);
+
+      let arr_a = [1, 2, 3];
+      let arr_b = ["a", "b", "c"];
+      let arr_c = arr_a.concat(arr_b);
+      console.log(arr_c);
+      let arr_d = [...arr_a, ...arr_b];
+      console.log(arr_d);
+    </script>
+  </body>
+</html>
