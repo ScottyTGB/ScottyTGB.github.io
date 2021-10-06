@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS 3</title>
+  </head>
+  <body>
+    <script>
+      //Functions
+
+      function funName() {
+        document.write("Hello function!");
+      }
+      funName();
+
+      function number(num1, num2) {
+        document.write(num1 + num2 + "<br>");
+      }
+      number(1, 3);
+
+      function adding(number1, number2) {
+        document.write(number1 + number2);
+      }
+      let firstnum = prompt("Enter a number");
+      let secondnum = prompt("Enter another number");
+      adding(Number(firstnum), Number(secondnum));
+
+      let laptop = { brand: "Apple", type: "M1", price: 450000 };
+      console.log(laptop);
+      console.log(laptop.brand);
+    </script>
+  </body>
+</html>

@@ -59,6 +59,47 @@
       console.log(arr_c);
       let arr_d = [...arr_a, ...arr_b];
       console.log(arr_d);
+
+      //Loops
+      for (let i = 0; i < 10; i++) {
+        document.write(`${i}.<h1>Hello JS</h1>`);
+      }
+
+      let list = ["a", "b", "c", "d"];
+      let list_count = list.length;
+      console.log(list_count);
+
+      for (let j = 0; j < list_count; j++) {
+        document.write(`<h1>${list[j]}</h1>`);
+      }
+
+      //While loop
+
+      let n = 0;
+      while (n < list_count) {
+        document.write(`<h1>${list[n]}</h1>`);
+        n++;
+      }
+
+      let num = 1;
+      while (num < 11) {
+        document.write(`<h1>This number is ${num}</h1>`);
+        num++;
+      }
+
+      //Do while
+
+      let no1 = 1;
+      do {
+        document.write(`<h1>Le number is ${no1}`);
+        no1++;
+      } while (no1 < 10);
+
+      //For of loop
+
+      for (let value of list) {
+        document.write(`<h1>Le value is ${value}</h1>`);
+      }
     </script>
   </body>
 </html>
