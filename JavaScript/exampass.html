@@ -23,7 +23,11 @@
         let java = document.getElementById("java").value;
         let js = document.getElementById("javascript").value;
 
-        if (flutter >= 50 && java >= 50 && js >= 50) {
+        if (flutter >= 80 || java >= 80 || js >= 80) {
+          let pass = document.getElementById("exam_result");
+          pass.innerHTML =
+            "<h1>This student has passed with a distinction!</h1>";
+        } else if (flutter >= 50 && java >= 50 && js >= 50) {
           let pass = document.getElementById("exam_result");
           pass.innerHTML = "<h1>This student has passed!</h1>";
         } else {
