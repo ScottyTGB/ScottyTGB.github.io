@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Selector</title>
+  </head>
+  <body>
+    <h1 id="lg">Language</h1>
+    <p class="lang">HTML</p>
+    <p class="lang">JavaScript</p>
+    <p class="lang">jQuery</p>
+    <button onclick="language()">Click</button>
+    <script>
+      function language() {
+        let lg_id = document.getElementById("lg").innerHTML;
+        console.log(lg_id);
+
+        var lang_class = document.getElementsByClassName("lang");
+        console.log(lang_class);
+        console.log(lang_class[0].innerHTML);
+
+        let q_lang = document.querySelector("#lg").innerHTML;
+        console.log(q_lang);
+
+        let c_lang = document.querySelectorAll(".lang").innerHTML;
+        console.log(c_lang);
+
+        let e_lang = document.querySelector("p");
+        console.log(e_lang);
+
+        let t_lang = document.getElementsByTagName("h1");
+        console.log(t_lang);
+      }
+    </script>
+  </body>
+</html>

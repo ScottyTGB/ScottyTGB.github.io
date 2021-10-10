@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table JS</title>
+  </head>
+  <body>
+    <form action="">
+      <label for="name">Name</label>
+      <input type="text" name="" id="name" /><br /><br />
+      <label for="age">Age</label>
+      <input type="text" name="" id="age" /><br /><br />
+      <button type="button" onclick="adddata()">Add Data</button>
+    </form>
+    <button onclick="showdata()">Show Data</button>
+    <table border="1" cellspacing="0" cellpadding="15">
+      <thead>
+        <th>No.</th>
+        <th>Name</th>
+        <th>Age</th>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+
+    <script>
+      let data = [
+        { name: "Scotty", age: "16" },
+        { name: "OONga", age: "69" },
+        { name: "BOONga", age: "420" },
+      ];
+      function adddata() {
+        let newdata = {
+          name: document.getElementById("name").value,
+          age: document.getElementById("age").value,
+        };
+        console.log(newdata);
+        data.push(newdata);
+        console.log(data);
+      }
+      function showdata() {
+        console.log(data);
+        let tbody = document.querySelector("#tbody");
+        let mydata = "";
+        let i = 1;
+
+        for (const value of data) {
+          console.log(value.name);
+          mydata += `<tr>
+                        <td>${i}</td>
+                        <td>${value.name}</td>
+                        <td>${value.age}</td>
+                    </tr>`;
+          i++;
+        }
+        console.log(mydata);
+        tbody.innerHTML = mydata;
+      }
+    </script>
+  </body>
+</html>
