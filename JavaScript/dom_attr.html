@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM attributes</title>
+  </head>
+  <body>
+    <button type="button" id="btn">Click</button>
+    <input type="text" name="name" id="name" disabled="disable" />
+
+    <script>
+      let btn = document.getElementById("btn");
+      btn.addEventListener("click", function () {
+        let input_data = document.getElementById("name");
+        let input_attr = input_data.getAttribute("disabled");
+        console.log(input_attr);
+
+        if (input_attr) {
+          input_data.removeAttribute("disabled");
+        } else {
+          input_data.setAttribute("disabled", "disabled");
+        }
+      });
+    </script>
+  </body>
+</html>

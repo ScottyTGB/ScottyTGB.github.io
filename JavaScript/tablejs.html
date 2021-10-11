@@ -14,7 +14,6 @@
       <input type="text" name="" id="age" /><br /><br />
       <button type="button" onclick="adddata()">Add Data</button>
     </form>
-    <button onclick="showdata()">Show Data</button>
     <table border="1" cellspacing="0" cellpadding="15">
       <thead>
         <th>No.</th>
@@ -25,11 +24,7 @@
     </table>
 
     <script>
-      var data = [
-        { name: "Scotty", age: "123" },
-        { name: "OONga", age: "69" },
-        { name: "BOONga", age: "420" },
-      ];
+      var data = [];
       console.log(data);
       function adddata() {
         let newdata = {
@@ -46,9 +41,6 @@
         } else {
           data.push(newdata);
         }
-      }
-      console.log(data);
-      function showdata() {
         let tbody = document.querySelector("#tbody");
         let mydata = "";
         let i = 1;
@@ -61,6 +53,8 @@
                     </tr>`;
           i++;
         }
+        console.log(data);
+        function showdata() {}
         tbody.innerHTML = mydata;
       }
     </script>
