@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM CSS</title>
+    <script>
+      function change() {
+        let p_tag = document.getElementById("p_tag");
+        p_tag.style.backgroundColor = "red";
+        p_tag.style.fontSize = "50px";
+        p_tag.style.fontWeight = "bold";
+
+        let img_tag = document.getElementById("img_tag");
+        img_tag.style.width = "300px";
+      }
+    </script>
+  </head>
+  <body>
+    <p id="p_tag">Hello Juan man</p>
+    <img src="HEHE Boi.jpg" alt="image lol" id="img_tag" />
+    <button onclick="change()" type="button">Change</button>
+  </body>
+</html>

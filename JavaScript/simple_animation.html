@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Animation</title>
+    <style>
+      #bg {
+        height: 214px;
+        background-image: url("landscape.jpg");
+      }
+      #train {
+        position: relative;
+        margin-top: -120px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="bg"></div>
+    <img src="train.gif" alt="train" width="300px" id="train" />
+    <br /><br />
+    <button type="button" onclick="startTrain()">Start</button>
+    <script>
+      let train = document.getElementById("train");
+
+      function startTrain() {
+        let start = Date.now();
+        console.log(start);
+        let timer = setInterval(function () {
+          let timePassed = Date.now() - start;
+
+          train.style.left = timePassed / 5 + "px";
+
+          if (timePassed > 5000) {
+            clearInterval(timer);
+          }
+        }, 1);
+      }
+    </script>
+  </body>
+</html>
