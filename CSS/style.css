@@ -1,0 +1,32 @@
+h1 {
+  text-align: center;
+  color: red;
+}
+/* * {
+  color: red;
+} */
+/* p {
+  color: #f00;
+  word-spacing: 20px;
+  line-height: 50px;
+  text-indent: 40px;
+} */
+a[title="google"] {
+  text-decoration: none;
+  color: green;
+}
+#id_selector {
+  color: green;
+}
+p.class_selector {
+  color: brown;
+  line-height: 30px;
+  word-spacing: 40px;
+  text-indent: 50px;
+}
+p a {
+  color: red;
+}
+p.child > a {
+  color: green;
+}
