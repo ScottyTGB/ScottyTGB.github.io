@@ -90,3 +90,81 @@ input[type="checkbox"]:checked + label {
   color: yellow;
   font-weight: bold;
 }
+input[type="checkbox"]:disabled + label {
+  color: #fff;
+}
+#fieldset p {
+  text-indent: 50px;
+}
+ul li {
+  margin-left: 50px;
+  line-height: 40px;
+}
+li:first-child {
+  background-color: red;
+  width: 80%;
+}
+li:last-child {
+  background-color: green;
+  width: 80%;
+}
+li:nth-child(2) {
+  background-color: yellow;
+  width: 80%;
+}
+p:empty {
+  background-color: #60708b;
+  height: 20px;
+}
+.thankyou {
+  text-align: center;
+}
+.borderone {
+  border: 1px dotted #f00;
+}
+.bordertwo {
+  border-left: 4px solid yellow;
+}
+.borderstyle {
+  border-style: double;
+}
+.mix {
+  border-style: solid dotted double dashed;
+}
+.bwidth {
+  border-width: 2px 6px 10px 15px;
+  border-style: solid;
+}
+/* Margins */
+.marginone {
+  margin: 15px;
+  border: 1px solid black;
+}
+.margintwo {
+  margin: 10px 20px;
+  border: 1px solid red;
+}
+.marginthree {
+  margin: 5px 15px 30px;
+  border: 1px solid yellow;
+}
+.marginfour {
+  margin-left: 40px;
+  border: 1px solid black;
+}
+/* Padding */
+.padding {
+  border: 1px solid red;
+  padding-top: 50px;
+}
+/* Layout */
+.google {
+  border: 1px solid red;
+  width: 400px;
+  display: inline-block;
+}
+.block {
+  border: 1px solid black;
+  width: 400px;
+  display: inline-block;
+}
