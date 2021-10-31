@@ -10,22 +10,180 @@
   <body>
     <!-- Nav Start -->
     <nav class="background">
-      <a href="#home" class="logo_link">
+      <a href="index.html" class="logo_link">
         <div>
           <img src="../images/logo.png" alt="LOGO" class="logo" />
           <div class="logo_txt">Mr Beer</div>
         </div>
       </a>
       <ul>
-        <li>Shop</li>
-        <li>Blog</li>
-        <li>About</li>
-        <li>Contact</li>
+        <a href="shop.html"><li>Shop</li></a>
+        <a href="blog.html"><li>Blog</li></a>
+        <a href="about.html"><li>About</li></a>
+        <a onclick="contact()"><li>Contact</li></a>
       </ul>
     </nav>
     <!-- Nav End -->
+    <div class="spacer"></div>
     <!-- Container Start -->
-    <div class="container"></div>
+    <div class="container">
+      <!-- Home Start -->
+      <div class="beerbar">
+        <h3>Specially Crafted <br />Beer</h3>
+        <button class="ShopNow" onclick="ShopNow()" id="ShopNow">
+          Shop Now
+        </button>
+      </div>
+      <!-- Home End -->
+    </div>
     <!-- Container End -->
+    <!-- Grid Start -->
+    <div class="grid">
+      <div
+        class="gridOne"
+        onmouseover="GridTrigger1()"
+        onmouseout="GridTriggerRelease1()"
+      >
+        <h3 class="perfect">How to create our</h3>
+        <h1 id="GridTrigger1">MASTER BREW</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+          consequuntur facere repudiandae dignissimos illum quaerat ratione
+          recusandae. Sit praesentium et sunt corporis aut, molestias eum vitae
+          quod iure. Eaque, quam!
+        </p>
+        <button class="ReadMore" id="ReadMore" onclick="ReadMore()">
+          Read More
+        </button>
+      </div>
+      <div
+        class="gridTwo"
+        onmouseover="GridTrigger2()"
+        onmouseout="GridTriggerRelease2()"
+      >
+        <i class="fab fa-pagelines fa-2x" id="GridTriggerIcon2"></i>
+        <h3 id="GridTrigger2">Quality Ingredients</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div
+        class="gridTwo"
+        onmouseover="GridTrigger3()"
+        onmouseout="GridTriggerRelease3()"
+      >
+        <i class="fas fa-sun fa-2x" id="GridTriggerIcon3"></i>
+        <h3 id="GridTrigger3">Natural Sunshine</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div
+        class="gridTwo"
+        onmouseover="GridTrigger4()"
+        onmouseout="GridTriggerRelease4()"
+      >
+        <i class="fas fa-asterisk fa-2x" id="GridTriggerIcon4"></i>
+        <h3 id="GridTrigger4">Fermentation</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div
+        class="gridTwo"
+        onmouseover="GridTrigger5()"
+        onmouseout="GridTriggerRelease5()"
+      >
+        <i class="fas fa-glass-cheers fa-2x" id="GridTriggerIcon5"></i>
+        <h3 id="GridTrigger5">Unrivalled Taste</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+    <!-- Grid End -->
+    <!-- Friend Section Start -->
+    <div class="boxshow">
+      <img src="../images/1.jpg" alt="" />
+      <div class="boxshowtxt">
+        <h2>Made to share with</h2>
+        <h1>Friends</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab reiciendis
+          eum rem? Dignissimos dolore eligendi, ex perspiciatis doloremque
+          repellat et debitis vero ea hic. Qui ut obcaecati hic, inventore quo
+          sed veniam odit veritatis facilis est praesentium enim delectus
+          voluptatum esse quisquam magni fugiat, dolore, saepe eius recusandae!
+          Facilis magni eum ea saepe ab. In, nisi consectetur. Commodi libero ea
+          quia quae distinctio sunt unde, quisquam aliquid sequi obcaecati,
+          iusto, odio eligendi. Qui quasi cum, ut natus maiores distinctio? Cum
+          deserunt voluptates nisi totam quae, incidunt nihil repellendus
+          dolorem ut consequuntur nostrum, deleniti quos. Rerum, modi? Accusamus
+          nam et ea quidem tempore molestiae tempora harum, quas quia vero est
+          consequuntur at maiores ut magni repellendus distinctio, iste quaerat
+          assumenda. Dignissimos odio, consectetur alias quia quisquam
+          blanditiis delectus impedit modi hic beatae earum laudantium possimus
+          laboriosam nobis ut deleniti, voluptate dolorem.
+        </p>
+      </div>
+    </div>
+    <!-- Friend Section End -->
+
+    <div class="clear"></div>
+
+    <!-- Browse Start -->
+
+    <div class="blackBackground">
+      <div class="blackBackgroundTxt">
+        <h2 class="perfect">Browse the</h2>
+        <h1 class="perfect">Beer Aile</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+          assumenda beatae, mollitia cupiditate accusamus natus labore. Dolores
+          consequatur voluptatum, maiores a molestiae ullam sed blanditiis
+          placeat asperiores, inventore laborum cum.
+        </p>
+        <button class="ShopNow">Read More</button>
+      </div>
+      <img src="../images/2.png" alt="" />
+    </div>
+
+    <!-- Browse End -->
+    <!-- Discount Grid Start -->
+
+    <div class="">
+      <div class="whiteBackgroundTxt">
+        <h2 class="perfect">21st December</h2>
+        <h1>Oktoberfest</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, tenetur
+          eius? Pariatur debitis officiis voluptatem facere quo cumque
+          consequuntur repudiandae. In ipsam suscipit nostrum corporis quis
+          laboriosam at sapiente tempora.
+        </p>
+        <button class="ShopNow">Read More</button>
+      </div>
+      <div class="whiteBackgroundTxt">
+        <h2 class="perfect">14th February</h2>
+        <h1>In stock now in NYC</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, tenetur
+          eius? Pariatur debitis officiis voluptatem facere quo cumque
+          consequuntur repudiandae. In ipsam suscipit nostrum corporis quis
+          laboriosam at sapiente tempora.
+        </p>
+        <button class="ShopNow">Read More</button>
+      </div>
+    </div>
+
+    <!-- Discount Grid End -->
+    <div class="clear"></div>
+    <!-- Footer Start -->
+
+    <footer id="footer">
+      <p>Designed and implemented by <b>Scotty</b></p>
+      <a href="" id="target"><i class="fab fa-facebook-square fa-3x"></i></a>
+      <a href=""><i class="fab fa-twitter-square fa-3x"></i></a>
+      <a href=""><i class="fab fa-github-square fa-3x"></i></a>
+    </footer>
+
+    <!-- Footer End -->
   </body>
+  <script src="script.js"></script>
+  <script
+    src="https://kit.fontawesome.com/ca0077bcbd.js"
+    crossorigin="anonymous"
+  ></script>
 </html>

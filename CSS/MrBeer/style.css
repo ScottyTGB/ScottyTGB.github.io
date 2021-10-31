@@ -4,19 +4,24 @@
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
+
+*::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
 /* Nav Start */
 nav {
   position: fixed;
   width: 100%;
   background-color: #16191c;
   height: 150px;
+  z-index: 10;
 }
-
-.container {
-  padding-top: 150px;
-}
-
 .logo {
   width: 110px;
   display: block;
@@ -42,7 +47,7 @@ nav {
   color: white;
 }
 
-.background ul li {
+.background ul a li {
   display: inline-block;
   margin-right: 50px;
   margin-top: 60px;
@@ -50,6 +55,8 @@ nav {
   text-transform: uppercase;
   text-align: center;
   transition: 300ms ease;
+  color: white;
+  cursor: pointer;
 }
 
 .background ul li:hover {
@@ -57,4 +64,253 @@ nav {
   transform: translateX(20px);
   color: #ffd700;
 }
+
 /* Nav End */
+
+.spacer {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+
+/* Container Background Start */
+
+.container {
+  background-image: url(../images/background.jpg);
+  height: 750px;
+  width: 100%;
+}
+
+/* Container Background End */
+/* Container Content Start */
+
+.beerbar {
+  padding-top: 200px;
+  padding-left: 1000px;
+  color: #ffd700;
+  font-weight: 900;
+  font-size: 40px;
+  overflow: hidden;
+}
+
+.ShopNow {
+  padding: 10px 20px;
+  border-radius: 45px;
+  font-size: 20px;
+  border: 0;
+  background-color: #ffd700;
+  transition: 300ms ease;
+}
+
+.ShopNow:hover {
+  background-color: #fff;
+  color: black;
+}
+
+/* Container Content End */
+/* Grid Start */
+
+.grid {
+  display: grid;
+  grid-template-columns: 50% auto auto;
+  overflow: hidden;
+}
+
+.gridOne {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  padding: 70px 50px 20px 90px;
+}
+
+.grid .gridOne h3,
+.grid .gridOne h1 {
+  text-align: left;
+}
+
+.grid .gridOne h1,
+.grid .gridTwo h3,
+.grid .gridTwo i {
+  transition: 300ms ease-in-out;
+  color: #ffd700;
+}
+
+.grid .gridOne p {
+  text-align: justify;
+}
+
+.grid div {
+  border: 4px solid #16191c;
+  background-color: black;
+  color: white;
+}
+
+.grid .gridTwo {
+  text-align: center;
+}
+
+.perfect {
+  color: #ffd700;
+}
+
+.gridOne button {
+  margin-top: 10px;
+}
+
+.ReadMore {
+  padding: 10px 20px;
+  border-radius: 45px;
+  font-size: 20px;
+  border: 0;
+  background-color: #ffd700;
+  transition: 300ms ease;
+}
+
+.ReadMore:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.grid .gridTwo {
+  padding: 20px 50px 30px 50px;
+}
+
+/* Grid End */
+/* Friends Section Start */
+
+.boxshow img {
+  width: 700px;
+  margin-top: 50px;
+  margin-left: 90px;
+  border: 1px solid #ffd700;
+  border-radius: 5px;
+  transition: 300ms ease;
+  float: left;
+}
+
+.boxshowtxt {
+  position: relative;
+  top: 100px;
+  left: 80px;
+  width: 50%;
+}
+
+/* Friends Section End */
+
+.clear {
+  clear: both;
+}
+
+/* Browse Start */
+
+.blackBackground {
+  margin-top: 50px;
+  background-color: #000;
+  color: white;
+}
+
+.blackBackgroundTxt {
+  width: 35%;
+  margin-top: 80px;
+  margin-left: 90px;
+  float: left;
+}
+
+.blackBackgroundTxt button {
+  margin-top: 10px;
+}
+
+.blackBackground img {
+  width: 800px;
+}
+
+/* Browse End */
+/* Discount Start */
+
+.whiteBackgroundTxt {
+  width: 35%;
+  margin-left: 200px;
+  margin-top: 50px;
+  float: left;
+}
+
+.whiteBackgroundTxt button {
+  margin-top: 10px;
+}
+
+/* Discount End */
+/* About Container Start */
+
+.aboutContainer {
+  background-image: url(../images/pub.jpg);
+  height: 750px;
+  width: 100%;
+  position: relative;
+}
+
+.aboutContainer h3 {
+  color: #ffd700;
+  text-align: center;
+  margin-top: 2%;
+  font-size: 40px;
+}
+
+.aboutContainer p {
+  color: white;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: justify;
+}
+
+.aboutGrid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  color: white;
+  margin-bottom: 2%;
+}
+
+.aboutGridChild {
+  text-align: center;
+}
+
+.aboutGridChild i {
+  padding: 30px 30px;
+  background-color: #16191c;
+  border: 1px solid #ffd700;
+  border-radius: 50%;
+}
+
+.backgroundOpacity {
+  background-color: rgba(22, 25, 28, 0.8);
+}
+
+/* About Container End */
+/* Footer Start */
+
+footer {
+  height: 100px;
+  background-color: #16191c;
+  color: white;
+  margin-top: 60px;
+  width: 100%;
+  transition: 1000ms ease;
+}
+
+footer p {
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 2%;
+}
+
+footer p b {
+  color: #ffd700;
+}
+
+footer a {
+  color: #ffd700;
+  float: right;
+  margin-right: 50px;
+  margin-top: 1.5%;
+}
+
+/* Footer End */
